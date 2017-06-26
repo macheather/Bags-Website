@@ -8,14 +8,13 @@ export default class Name extends Component {
 
     return (
       <div className="col-sm-4">
+        <Link to={'/product/' + product._id}>
         <img className="" height="300px" width="300px" src= {product.image} />
-        <h2 className="text-center">{product.name}</h2>
+          <h2 className="text-center">{product.name}</h2>
+        </Link>
         <div className="text-center">
-           <h2 ><strike>${product.price}</strike> <span className="text-danger">{product.saleprice}</span></h2>
-          <Link to={'/product/' + product._id}>
-            <button className="btn btn-primary">Buy Now</button>
-          </Link>
-      </div>
+          <h2 ><strike>${product.price}</strike> <span className="text-danger">{product.saleprice}</span></h2>
+        </div>
       </div>
 
     )
