@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router';
 import ProductDetails from '/imports/ui/components/Products/ProductDetails.jsx';
+import Review from '/imports/ui/components/Review.jsx';
 
 export default class ProductPage extends Component {
 
@@ -12,6 +14,7 @@ export default class ProductPage extends Component {
           <div>
               <div className="container">
                 <ProductDetails product={product}/>
+                <Review product={product} />
               </div>
         </div>
     )

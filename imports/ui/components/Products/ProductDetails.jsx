@@ -6,6 +6,7 @@ export default class ProductDetails extends Component {
 
   render () {
     let product = this.props.product;
+    let reviews = product.review;
     return (
 
         <div className="row">
@@ -30,9 +31,18 @@ export default class ProductDetails extends Component {
             <Link to="/">
               <button className="btn btn-default"> <i className="glyphicon glyphicon-arrow-left"> Back </i></button>
             </Link>
+            <div className="col-sm-8">
+            <p className="lala">
+              <strong>Review: </strong>
+              <img height="35px" width="35px" src="/images/heartbag.png" />
+              <img height="35px" width="35px" src="/images/heartbag.png" />
+              <img height="35px" width="35px" src="/images/heartbag.png" />
+
+            </p>
             </div>
           </div>
           </div>
+        </div>
 
     )
   }

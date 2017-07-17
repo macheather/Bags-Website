@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
+import Review from '/imports/ui/components/Review.jsx';
 
 export default class SecondPage extends Component {
 
